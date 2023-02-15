@@ -1,7 +1,7 @@
 const fs = require("fs");
-const path = require('path');
+// const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+// const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
@@ -30,6 +30,11 @@ const questions = [
         name: "license",
         message: "What license do you want to use for your project?",
         choices: ["MIT", "Apache 2.0", "GPL 3.0", "None"]
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "What are the contribution guidelines?",
     },
     {
         type: "input",
@@ -87,7 +92,7 @@ const generateReadmeContent = (answers) => {
 
     ## Contributing
 
-    ${answers.contributing}
+    ${answers.contribution}
 
     ## Tests
 
