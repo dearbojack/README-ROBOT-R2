@@ -102,7 +102,7 @@ ${answers.contribution}
 
 ## Tests
 
-${answers.tests}
+${answers.test}
 
 ## License
 
@@ -110,12 +110,12 @@ This project is licensed under the ${answers.license} license.
 
 ## Questions
 
-If you have any questions, you can contact me at ${answers.email}. You can also visit my GitHub profile at [${answers.github}](https://github.com/${answers.github}).`
+If you have any questions, you can contact me via [Email](${answers.email}). You can also visit my GitHub profile at [GitHub](https://github.com/${answers.github}).`
 }
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log("Successfully created README.md!"));
+    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log(`Successfully created README file for your project in current folder!`));
 }
 
 // function to initialize program
