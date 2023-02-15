@@ -109,7 +109,13 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((answers) => {
+        // generate
+        const readmeContent = generateReadmeContent(answers);
+        // write to file
+        const fileName = answers.title + ".md"; 
+        writeToFile(fileName, readmeContent);
+    })
 }
 
 // function call to initialize program
