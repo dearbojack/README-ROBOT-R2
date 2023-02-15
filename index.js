@@ -56,6 +56,51 @@ const generateLicenseBadge = (license) => {return badges[license]};
 
 // function to generate readme content
 
+const generateReadmeContent = (answers) => {
+    // generate badge
+    const badge = generateLicenseBadge(answers.license);
+    // all content
+    return `# ${answers.title}
+    
+    ${badge}
+    
+    ## Description
+
+    ${answers.description}
+
+    ## Table of Contents
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [License](#license)
+    - [Questions](#questions)
+
+    ## Installation
+
+    ${answers.installation}
+
+    ## Usage
+
+    ${answers.usage}
+
+    ## Contributing
+
+    ${answers.contributing}
+
+    ## Tests
+
+    ${answers.tests}
+
+    ## License
+
+    This project is licensed under the ${answers.license} license.
+
+    ## Questions
+
+    If you have any questions, you can contact me at ${answers.email}. You can also visit my GitHub profile at [${answers.github}](https://github.com/${answers.github}).`
+}
 
 // function to write README file
 function writeToFile(fileName, data) {
