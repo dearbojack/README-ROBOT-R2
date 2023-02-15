@@ -65,46 +65,47 @@ const generateReadmeContent = (answers) => {
     // generate badge
     const badge = generateLicenseBadge(answers.license);
     // all content
-    return `# ${answers.title}
+    return `
+# ${answers.title}
     
-    ${badge}
-    
-    ## Description
+${badge}
 
-    ${answers.description}
+## Description
 
-    ## Table of Contents
+${answers.description}
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [License](#license)
-    - [Questions](#questions)
+## Table of Contents
 
-    ## Installation
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-    ${answers.installation}
+## Installation
 
-    ## Usage
+${answers.installation}
 
-    ${answers.usage}
+## Usage
 
-    ## Contributing
+${answers.usage}
 
-    ${answers.contribution}
+## Contributing
 
-    ## Tests
+${answers.contribution}
 
-    ${answers.tests}
+## Tests
 
-    ## License
+${answers.tests}
 
-    This project is licensed under the ${answers.license} license.
+## License
 
-    ## Questions
+This project is licensed under the ${answers.license} license.
 
-    If you have any questions, you can contact me at ${answers.email}. You can also visit my GitHub profile at [${answers.github}](https://github.com/${answers.github}).`
+## Questions
+
+If you have any questions, you can contact me at ${answers.email}. You can also visit my GitHub profile at [${answers.github}](https://github.com/${answers.github}).`
 }
 
 // function to write README file
