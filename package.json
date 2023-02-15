@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "README ROBOT R2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Command Line README Generator with Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dali Han",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearbojack/README-ROBOT-R2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dearbojack/README-ROBOT-R2/issues"
+  },
+  "homepage": "https://github.com/dearbojack/README-ROBOT-R2#readme"
 }
