@@ -38,6 +38,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "test",
+        message: "How to test run the project?",
+    },
+    {
+        type: "input",
         name: "github",
         message: "What is your GitHub username?",
     },
