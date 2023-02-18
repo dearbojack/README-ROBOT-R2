@@ -34,22 +34,22 @@ const questions = [
     {
         type: "input",
         name: "contribution",
-        message: "What are the contribution guidelines?",
+        message: "What are the contribution guidelines?"
     },
     {
         type: "input",
         name: "test",
-        message: "How to test run the project?",
+        message: "How to test run the project?"
     },
     {
         type: "input",
         name: "github",
-        message: "What is your GitHub username?",
+        message: "What is your GitHub username?"
     },
     {
         type: "input",
         name: "email",
-        message: "What is your email address?",
+        message: "What is your email address?"
     }
 ];
 
@@ -59,7 +59,7 @@ const badges = {
     "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     "Apache 2.0": "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     "GPL 3.0": "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
-    "None": "",
+    "None": ""
 };
 
 const generateLicenseBadge = (license) => {return badges[license]};
